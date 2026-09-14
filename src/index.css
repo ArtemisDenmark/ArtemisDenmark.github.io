@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-bg: var(--color-bg);
+  --color-cyber-card: var(--color-card);
+  --color-cyber-text: var(--color-text);
+  --color-cyber-heading: var(--color-heading);
+  --color-cyber-neon: var(--color-neon);
+  --color-cyber-accent: var(--color-accent);
+  --color-cyber-border: var(--color-border);
+  --color-cyber-muted: var(--color-muted);
+  --font-mono: "Fira Code", monospace, ui-monospace;
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Light Mode */
+    --color-bg: #f4f4f5; /* zinc-100 */
+    --color-card: #ffffff; /* white */
+    --color-text: #52525b; /* zinc-600 */
+    --color-heading: #18181b; /* zinc-900 */
+    --color-neon: #059669; /* emerald-600 */
+    --color-accent: #0284c7; /* sky-600 */
+    --color-border: #e4e4e7; /* zinc-200 */
+    --color-muted: #f4f4f5; /* zinc-100 */
+  }
+
+  .dark {
+    /* Dark Mode (Cyber Theme) */
+    --color-bg: #0a0a0c;
+    --color-card: #111116;
+    --color-text: #a1a1aa;
+    --color-heading: #ffffff;
+    --color-neon: #00ff9d;
+    --color-accent: #00b8ff;
+    --color-border: #27272a; /* zinc-800 */
+    --color-muted: #18181b; /* zinc-900 */
+  }
+}
+
+body {
+  background-color: var(--color-cyber-bg);
+  color: var(--color-cyber-text);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+}
+
+::selection {
+  background-color: var(--color-cyber-neon);
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--color-cyber-bg);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-cyber-card);
+  border: 1px solid var(--color-cyber-border);
+  border-radius: 4px;
+}
