@@ -15,7 +15,6 @@ const FEATURED_PROJECTS = [
       "Full-stack gaming community platform featuring live timing, telemetry integration, and event coordination.",
     language: "Next.js / TypeScript",
     homepage: "https://www.immersivegaming.dk", // your live website
-    html_url: "https://github.com/ArtemisDenmark/immersivegaming",
     stargazers_count: 0,
     forks_count: 0,
     isFeatured: true,
